@@ -17,7 +17,7 @@
 
         <tr>
             <td><label for="apellido1">Primer apellido:</label></td>
-            <td><input type="text" name="apellido1" placeholder="Primer apellido"></td>
+            <td><input type="text" name="apellido1" placeholder="Primer apellido" required="required"></td>
         </tr>
 
         <tr>
@@ -25,7 +25,13 @@
             <td><input type="text" name="apellido2" placeholder="Segundo apellido"></td>
         </tr>
 
-
+        <tr>
+            <td><label for="telefono">Teléfono:</label></td>
+            <td><input type="tel" id="phone" name="phone" placeholder="xxx xxx xxx" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"></td>
+            
+            <small>Format: 123-45-678</small><br><br>
+        </tr>
+        
 
     </table>
 
