@@ -11,13 +11,13 @@
     <hr/>
     <table>
         <tr>
-            <td><label for="nombre">Nombre:</label></td>
-            <td><input type="text" name="nombre" placeholder="Nombre" required="required"></td>
+            <td><label for="nombre">*Nombre:</label></td>
+            <td><input type="text" name="nombre" placeholder="Nombre" required="required" autocomplete="on"></td>
         </tr>
 
         <tr>
-            <td><label for="apellido1">Primer apellido:</label></td>
-            <td><input type="text" name="apellido1" placeholder="Primer apellido" required="required"></td>
+            <td><label for="apellido1">*Primer apellido:</label></td>
+            <td><input type="text" name="apellido1" placeholder="Primer apellido" required="required" autocomplete="on"></td>
         </tr>
 
         <tr>
@@ -26,15 +26,24 @@
         </tr>
 
         <tr>
-            <td><label for="telefono">Teléfono:</label></td>
-            <td><input type="tel" id="phone" name="phone" placeholder="xxx xxx xxx" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"></td>
-            
-            <small>Format: 123-45-678</small><br><br>
+            <td><label for="email">*Email:</label></td>
+            <td><input type="email" name="email" placeholder="mail" required="required" autocomplete="email"></td>
+        </tr>
+
+        <tr>
+            <td><label for="telefono">*Teléfono:</label></td>
+            <td><input type="tel" id="phone" name="phone" placeholder="xxx xxx xxx" required="required"></td>
+        </tr>
+
+        <tr>
+            <td><label for="password">*Contraseña:</label></td>
+            <td><input type="password" id="password" placeholder="Contraseña" required="required"></td>
         </tr>
         
 
     </table>
 
+    <p>Campos con * son obligatorios</p>
 
 </body>
 </html>
